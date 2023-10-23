@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/WorldCities/.angular/cache/14.2.11
+/WorldCities/.vscode
+/WorldCities/node_modules
+/WorldCities/obj/Debug
+/WorldCitiesAPI/bin/Debug/net6.0
+/WorldCitiesAPI/obj
+/WorldCitiesAPI.Tests/bin
+/WorldCitiesAPI.Tests/obj
