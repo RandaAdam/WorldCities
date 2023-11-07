@@ -14,6 +14,16 @@ namespace WorldCitiesAPI.Controllers
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly JWTHandler _jwtHandler;
 
+        public AccountController(
+            ApplicationDbContext context,
+            UserManager<ApplicationUser> userManager, 
+            JWTHandler jwtHandler)
+        {
+            _context = context;
+            _userManager = userManager;
+            _jwtHandler = jwtHandler;
+        }
+
         [HttpPost("Login")]
         public async Task<IActionResult> Login(LoginRequest loginRequest)
         {
